@@ -66,7 +66,7 @@ public class TestWso2EventServer {
             }
         });
         log.info("Shutdown hook added.");
-        testServer.`(args[0], Integer.parseInt(args[1]), args[2], Integer.parseInt(args[3]), args[4]);
+        testServer.start(args[0], Integer.parseInt(args[1]), args[2], Integer.parseInt(args[3]), args[4]);
         synchronized (testServer) {
             try {
                 testServer.wait();
