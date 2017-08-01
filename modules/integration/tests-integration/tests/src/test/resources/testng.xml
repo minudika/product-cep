@@ -92,6 +92,10 @@
 
             <!-- Adding Kafka input receiver test case-->
             <class name="org.wso2.carbon.integration.test.inputflow.KafkaTestCase"/>
+
+            <!-- Adding Siddhi standalone persistence test case -->
+            <class name="org.wso2.carbon.integration.test.persistence.FileBasedPersistenceBasicTestCase"/>
+
         </classes>
 
     </test>
