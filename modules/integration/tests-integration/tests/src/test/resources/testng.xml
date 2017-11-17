@@ -100,7 +100,5 @@
             <class name="org.wso2.carbon.integration.test.patches.DAS561TestCase"/>
 
         </classes>
-
     </test>
-
 </suite>
