@@ -96,6 +96,9 @@
             <!-- Adding Siddhi standalone persistence test case -->
             <class name="org.wso2.carbon.integration.test.persistence.FileBasedPersistenceBasicTestCase"/>
 
+            <!-- Adding patchDAS561 test case -->
+            <class name="org.wso2.carbon.integration.test.patches.DAS561TestCase"/>
+
         </classes>
 
     </test>
