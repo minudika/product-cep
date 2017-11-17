@@ -1,5 +1,5 @@
 /*
- *  Copyright (c) 2016, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ *  Copyright (c) 2017, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
  *
  *  WSO2 Inc. licenses this file to you under the Apache License,
  *  Version 2.0 (the "License"); you may not use this file except
@@ -113,7 +113,7 @@ public class DAS561TestCase extends CEPIntegrationTest {
         eventPublisherAdminServiceClient.addEventPublisherConfiguration(eventPublisherConfig);
         Assert.assertEquals(eventPublisherAdminServiceClient.getActiveEventPublisherCount(), startEPCount + 1);
 
-        log.info("batch-wise events publishing to rdbms database started.");
+        log.info("events publishing started");
         for (int i=0;i<1050;i++) {
             EventDto eventDto = new EventDto();
             eventDto.setEventStreamId("org.wso2.event.sensor.stream:1.0.0");
@@ -121,7 +121,7 @@ public class DAS561TestCase extends CEPIntegrationTest {
                     "7.12324", "100.34", "23.4545"});
             eventSimulatorAdminServiceClient.sendEvent(eventDto);
         }
-        log.info("batch-wise events publishing to rdbms database stopped.");
+        log.info("events publishing stopped");
 
         Thread.sleep(5000);
 
